@@ -1,0 +1,8 @@
+{% extends "blog/base.html" %}
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <p>are you sure you want to detete {{object}} ?</p>
+    <button type="submit" class="btn btn-danger" value="Confirm"></button>
+  </form>
+{% endblock %}
